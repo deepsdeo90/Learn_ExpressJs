@@ -1,6 +1,30 @@
 extends layout
 
 block content
-  h1= title
-  p Hello #{name}
-  p Welcome to #{title}
+  div.container
+    .row.jumbotron
+      .col-sm-7
+        h1.display-4 Hello, world!
+        p.lead
+            | This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.
+      .col-sm-5
+        img(src='images/mouse.jpg')
+    .row
+      .col-sm-4
+        .card
+          .card-body
+            h3.card-title Software Problem
+            .card-text
+              | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      .col-sm-4
+        .card
+          .card-body
+            h3.card-title Hardware Problem
+            .card-text
+              | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+      .col-sm-4
+        .card
+          .card-body
+            h3.card-title PC Tune Up
+            .card-text
+              | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book..

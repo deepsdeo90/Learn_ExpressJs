@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  each service, i in results
+    .card
+      .card-body
+        h5.card-title #{service.name}
+        p.card-text #{service.description}
+        a.btn.btn-primary(href='#') #{service.price}
